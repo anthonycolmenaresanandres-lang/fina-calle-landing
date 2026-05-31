@@ -5,7 +5,7 @@ export default function Home() {
     <main className="poster-wrap flex min-h-dvh flex-col justify-between px-6 py-10 sm:px-8 sm:py-12">
       <section className="mx-auto flex w-full max-w-4xl flex-1 flex-col items-center justify-center text-center">
         <Image
-          src="/assets/fina-calle-os-logo.webp"
+          src="/assets/fina-calle-os-logo-white.webp"
           alt="Fina Calle OS logo"
           width={1017}
           height={806}
@@ -47,3 +47,4 @@ export default function Home() {
     </main>
   );
 }
+
