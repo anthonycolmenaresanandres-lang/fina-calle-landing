@@ -1,0 +1,33 @@
+import type { Metadata } from "next";
+import { Cormorant_Garamond, Manrope } from "next/font/google";
+import "./globals.css";
+
+const display = Cormorant_Garamond({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+});
+
+const sans = Manrope({
+  variable: "--font-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+export const metadata: Metadata = {
+  title: "Fina Calle | Interactive Digital Storefronts",
+  description:
+    "Fina Calle by AMMA Ventures LLC builds interactive digital storefronts for local businesses.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className={`${display.variable} ${sans.variable} h-full antialiased`}>
+      <body className="min-h-full">{children}</body>
+    </html>
+  );
+}
